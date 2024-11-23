@@ -256,3 +256,7 @@ function startSakura() { requestAnimationFrame = window.requestAnimationFrame ||
 window.onresize = function () { var canvasSnow = document.getElementById('canvas_snow'); }
 img.onload = function () { startSakura(); }
 function stopp() { if (staticx) { var child = document.getElementById("canvas_sakura"); child.parentNode.removeChild(child); window.cancelAnimationFrame(stop); staticx = false; } else { startSakura(); } }
+// NHẠC
+const Wussun_Music=["https://api.thanhdieu.com/random-music.php",];let index=Math.floor(Math.random()*Wussun_Music.length);const audio=new Audio(Wussun_Music[index]);function wussunplay(){audio.play()}document.addEventListener("click",wussunplay()),audio.addEventListener("ended",function(){index=(index+1)%Wussun_Music.length,audio.src=Wussun_Music[index],audio.play()});
+console.log("%c LoveDayWs V2 | Powered by WusTeam.Com", "color:#fff;background:linear-gradient(270deg,#986fee,#8695e6,#68b7dd,#18d7d3);padding:8px 15px;border-radius:15px");
+console.log("%c ZALO | 0968091844", "color:#fff;background:#000;padding:8px 15px;border-radius:15px");
